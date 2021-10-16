@@ -24,8 +24,8 @@ public class HitBox : MonoBehaviour
     {
         if (collision.otherCollider.TryGetComponent<HitBox>(out HitBox otherHitBox) && otherHitBox.playerIndex != playerIndex)
         {
-            float damage = otherHitBox.DamagePotential * DamagePotential * player.GetBaseDamage();
-            //otherHitBox.GetComponentInParent<Health>().Damage(damage);
+            int damage = Mathf.CeilToInt(otherHitBox.DamagePotential * DamagePotential * player.GetBaseDamage());
+            otherHitBox.GetComponentInParent<Health>().Damage(damage);
             //Do hit
             //Instantiate particles
         }
