@@ -14,10 +14,10 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Movement",
+                    "name": "Movement - Horizontal",
                     "type": "PassThrough",
                     "id": "99f6bfc6-3678-4094-9d9d-491172528eb5",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 },
@@ -41,6 +41,22 @@
                     "name": "Defense",
                     "type": "Button",
                     "id": "26ef9ecd-b0a1-4faa-b970-978e9848196b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "886b246f-a5e8-4cf7-acc6-0f75e22532bd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Duck",
+                    "type": "Button",
+                    "id": "700219a6-f117-499f-9d7b-04e146eb2a66",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -70,70 +86,70 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "WASD",
-                    "id": "cd4b4ff4-25de-4ad2-bf2e-44b86ef88235",
-                    "path": "2DVector",
+                    "name": "AD",
+                    "id": "2adbb7e1-b2e5-49a0-a440-16536ec38c32",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Movement - Horizontal",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "20b3092b-4ea3-4f04-9334-775413dcb62d",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "03f4adde-6cf0-47f5-9f31-6a8db2bf0cda",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "7410e932-40af-4e21-9b8c-1097b7ac54b2",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "d9225a32-85d8-4725-ae23-e687c6c75ebf",
+                    "name": "positive",
+                    "id": "c1af2c01-9ddb-4c69-ac8c-31020cb5f245",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
-                    "action": "Movement",
+                    "action": "Movement - Horizontal",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "6f689026-01bb-4e35-892d-d429a4fb34b5",
-                    "path": "<Gamepad>/leftStick",
+                    "name": "negative",
+                    "id": "4ba59997-40bc-4bba-9384-1bf6983df502",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Movement - Horizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "DPad - Horizontal",
+                    "id": "fec288ae-e753-4444-aec4-fbc0209d45ed",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement - Horizontal",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "5fb8c888-d927-4b11-a0f2-dd8c4f51b0bb",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller",
-                    "action": "Movement",
+                    "action": "Movement - Horizontal",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "69b77f69-bc69-41e6-a486-ebb91130dfb2",
+                    "path": "<Gamepad>/dpad/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "Movement - Horizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -198,6 +214,50 @@
                     "processors": "",
                     "groups": "Controller",
                     "action": "Defense",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73496219-1925-453b-a379-e94f94a48419",
+                    "path": "<Gamepad>/dpad/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "441d07f1-237d-4ed4-9431-5777326cc0a9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b80f5d7-fe26-488d-bb79-203c572da6d3",
+                    "path": "<Gamepad>/dpad/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "Duck",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbf80c4c-804f-41fd-b439-a0459e828a11",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Duck",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
