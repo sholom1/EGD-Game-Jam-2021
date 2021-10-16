@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-public class HealthBarBehavior : MonoBehaviour
+public class Health : MonoBehaviour
 {
     public Slider Slider;
     public Color Low; // Color for when on Critical Health
@@ -11,16 +11,19 @@ public class HealthBarBehavior : MonoBehaviour
     public int health; // Current Health
     public int maxHealth; // Current Max Health
     public UnityEvent OnDeath; // When Either Player Dies...
-
+    public float Hitpoints;
+    public float MaxHitpoints;
+    public Health HealthBar;
     // Start is called before the first frame update
 public void SetHealth(float health, float maxHealth)
     {
         Slider.gameObject.SetActive(health < maxHealth);
         Slider.value = health;
         Slider.maxValue = maxHealth;
+
     }
-public void Damage(){ 
-    
+public void Damage(){
+        
     }
 
 public void Die()
