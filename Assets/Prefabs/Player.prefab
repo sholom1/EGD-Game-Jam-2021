@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8616258228319827792}
   - component: {fileID: 8616258228319827793}
   - component: {fileID: 3626299869337567177}
+  - component: {fileID: -5619569765475321502}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -157,9 +158,42 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 5fa9fb75-f52a-483a-9894-0f1f3266d2bb
+    m_ActionName: Controls/New action
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: -5619569765475321502}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnPlayerMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 99f6bfc6-3678-4094-9d9d-491172528eb5
+    m_ActionName: Controls/Movement[/XInputControllerWindows/leftStick/up,/XInputControllerWindows/leftStick/down,/XInputControllerWindows/leftStick,/XInputControllerWindows/leftStick/right,/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 
+  m_DefaultActionMap: Controls
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &-5619569765475321502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8616258228319827794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6844a66e45a682343a8753bd4ddb7bdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveForce: 1
