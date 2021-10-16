@@ -6,7 +6,7 @@
             "id": "eaf3b48e-d4da-484b-930f-b2554a10e54e",
             "actions": [
                 {
-                    "name": "New action",
+                    "name": "Power Attack",
                     "type": "Button",
                     "id": "5fa9fb75-f52a-483a-9894-0f1f3266d2bb",
                     "expectedControlType": "Button",
@@ -20,17 +20,52 @@
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Low Attack",
+                    "type": "Button",
+                    "id": "b936b6f5-577a-4777-8b0e-dc1dce7dcf49",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "High Attack",
+                    "type": "Button",
+                    "id": "c37e49be-4135-4f14-8dca-d9cee03f71e5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Defense",
+                    "type": "Button",
+                    "id": "26ef9ecd-b0a1-4faa-b970-978e9848196b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "9949ccdf-9dca-4009-8dee-632305f627e6",
-                    "path": "",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "New action",
+                    "groups": "Controller",
+                    "action": "Power Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "826e83d8-9fe3-46be-87b9-3df1880f7839",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Power Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -97,6 +132,72 @@
                     "processors": "",
                     "groups": "Controller",
                     "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4815a2ee-5ab7-49fd-ae60-80fe849d3f14",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "Low Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5f45735e-f830-48c7-bda8-e64d2c7d6456",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "Low Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ccccd54-a3d9-4987-a08b-216814904a4a",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "High Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "162a2e3b-c19e-4baf-a349-1e19436055e9",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "High Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5d7b81ee-93ac-475c-99dc-3538a54d6ea1",
+                    "path": "<Keyboard>/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Defense",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b0bc1e36-c9cb-45ed-ade0-b932e3176b87",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Controller",
+                    "action": "Defense",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
