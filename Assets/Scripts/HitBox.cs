@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
+[RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
 public class HitBox : MonoBehaviour
 {
     private new Rigidbody2D rigidbody;
-    private new BoxCollider2D collider;
+    private new CapsuleCollider2D collider;
     private PlayerController player;
     public int playerIndex;
     public float DamagePotential;
@@ -16,7 +16,7 @@ public class HitBox : MonoBehaviour
         playerIndex = GetComponentInParent<PlayerInput>().playerIndex;
         player = GetComponentInParent<PlayerController>();
         rigidbody = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
+        collider = GetComponent<CapsuleCollider2D>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
