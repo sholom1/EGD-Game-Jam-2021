@@ -11,8 +11,6 @@ public class Health : MonoBehaviour
     public int health; // Current Health
     public int maxHealth; // Current Max Health
     public UnityEvent OnDeath; // When Either Player Dies...
-    public float Hitpoints;
-    public float MaxHitpoints;
     public Health HealthBar;
     // Start is called before the first frame update
 public void SetHealth(float health, float maxHealth)
