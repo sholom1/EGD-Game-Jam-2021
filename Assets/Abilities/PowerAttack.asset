@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PowerAttack
   m_EditorClassIdentifier: 
   name: PowerAttack
-  Cooldown: 10
+  Cooldown: 0.3
   triggerName: PowerAttack
   progressModifier:
     serializedVersion: 2
