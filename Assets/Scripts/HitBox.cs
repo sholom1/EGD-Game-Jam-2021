@@ -9,8 +9,10 @@ public class HitBox : MonoBehaviour
     private new Rigidbody2D rigidbody;
     private new CapsuleCollider2D collider;
     private PlayerController player;
+    [HideInInspector]
     public int playerIndex;
     public float DamagePotential;
+    public float DamageResistance;
     private void Start()
     {
         playerIndex = GetComponentInParent<PlayerInput>().playerIndex;
