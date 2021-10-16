@@ -41,7 +41,13 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        Debug.Log(horizontalMove);
+        if (horizontalMove > 0.01f)
+            transform.LookAt(transform.position - Vector3.forward, Vector2.up);
+        else if (horizontalMove < -0.01f)
+            transform.LookAt(transform.position + Vector3.forward, Vector2.up);
         rigidbody.AddForce(new Vector2(horizontalMove * moveForce, isGrounded && isJumping ? jumpForce : 0), ForceMode2D.Impulse);
+        anim.SetFloat("velocityX", Mathf.Abs(rigidbody.velocity.x) / moveForce);
         if (isJumping) isJumping = !isJumping;
     }
     public void OnMovementHorizontal(InputValue value)
