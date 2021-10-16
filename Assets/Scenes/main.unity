@@ -816,6 +816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 50
+  DamageResistance: 25
 --- !u!50 &865469005
 Rigidbody2D:
   serializedVersion: 4
@@ -851,6 +852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 0.8
 --- !u!50 &865469007
 Rigidbody2D:
   serializedVersion: 4
@@ -886,6 +888,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 8
 --- !u!50 &865469009
 Rigidbody2D:
   serializedVersion: 4
@@ -921,6 +924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 50
+  DamageResistance: 25
 --- !u!50 &865469011
 Rigidbody2D:
   serializedVersion: 4
@@ -956,6 +960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 0.8
 --- !u!50 &865469013
 Rigidbody2D:
   serializedVersion: 4
@@ -991,6 +996,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 0.8
 --- !u!50 &865469015
 Rigidbody2D:
   serializedVersion: 4
@@ -1026,6 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 0.8
 --- !u!50 &865469017
 Rigidbody2D:
   serializedVersion: 4
@@ -1061,6 +1068,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 2
+  DamageResistance: 0.8
 --- !u!50 &865469019
 Rigidbody2D:
   serializedVersion: 4
@@ -1096,6 +1104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 0.8
 --- !u!50 &865469021
 Rigidbody2D:
   serializedVersion: 4
@@ -1131,6 +1140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 90
+  DamageResistance: 40
 --- !u!50 &865469023
 Rigidbody2D:
   serializedVersion: 4
@@ -1166,6 +1176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 60
+  DamageResistance: 15
 --- !u!50 &865469025
 Rigidbody2D:
   serializedVersion: 4
@@ -1201,6 +1212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 30
+  DamageResistance: 17
 --- !u!50 &865469027
 Rigidbody2D:
   serializedVersion: 4
@@ -1236,6 +1248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 60
+  DamageResistance: 15
 --- !u!50 &865469029
 Rigidbody2D:
   serializedVersion: 4
@@ -1271,6 +1284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 30
+  DamageResistance: 17
 --- !u!50 &865469031
 Rigidbody2D:
   serializedVersion: 4
@@ -1306,6 +1320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 0
   DamagePotential: 20
+  DamageResistance: 8
 --- !u!50 &865469033
 Rigidbody2D:
   serializedVersion: 4
