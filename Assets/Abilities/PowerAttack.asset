@@ -12,6 +12,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb22b2cacce12574c893f17385ddc421, type: 3}
   m_Name: PowerAttack
   m_EditorClassIdentifier: 
-  name: 
-  Cooldown: 0
-  triggerName: 
+  name: PowerAttack
+  Cooldown: 10
+  triggerName: PowerAttack
+  progressModifier:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 9.493267
+      outSlope: 9.493267
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.04958337
+    - serializedVersion: 3
+      time: 0.23858084
+      value: 0.9997072
+      inSlope: 0.03515556
+      outSlope: 0.03515556
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.5206941
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9941075
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  baseDamage: 100
