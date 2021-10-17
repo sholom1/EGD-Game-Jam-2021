@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Linq;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private List<Ability> abilities;
     private Dictionary<string, Ability> abilityLookup;
+    public bool isAttacking;
     [HideInInspector]
     private Ability activeAbility;
 
@@ -38,10 +40,18 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         cooldown -= Time.deltaTime;
+        if (cooldown < 0)
+            CancelAttack();
     }
+
+    public void CancelAttack()
+    {
+        isAttacking = false;
+        activeAbility = null;
+    }
+
     private void FixedUpdate()
     {
-        Debug.Log(horizontalMove);
         if (horizontalMove > 0.01f)
             transform.LookAt(transform.position - Vector3.forward, Vector2.up);
         else if (horizontalMove < -0.01f)
@@ -62,6 +72,7 @@ public class PlayerController : MonoBehaviour
     {
         if (cooldown < 0 && abilityLookup.TryGetValue(name, out Ability ability))
         {
+            isAttacking = true;
             activeAbility = ability;
             anim.SetTrigger(activeAbility.triggerName);
             cooldown = activeAbility.Cooldown;
@@ -70,5 +81,5 @@ public class PlayerController : MonoBehaviour
     public void OnPowerAttack() => triggerAbility("PowerAttack");
     private bool isGrounded => Physics2D.Raycast(transform.position, Vector2.down, float.MaxValue, GroudMask).distance < 1f;
 
-    public float GetBaseDamage() => activeAbility.getBaseDamage(cooldown);
+    public float GetBaseDamage() => isAttacking ? activeAbility.getBaseDamage(cooldown) : 0;
 }
