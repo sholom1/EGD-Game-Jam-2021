@@ -93,7 +93,18 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard - Left"",
+                    ""action"": ""Power Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2e0d8ec7-9d03-43d9-a3d9-c1a167de87d8"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
                     ""action"": ""Power Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -115,7 +126,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard - Left"",
                     ""action"": ""Movement - Horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -126,7 +137,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard - Left"",
                     ""action"": ""Movement - Horizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -165,12 +176,45 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
+                    ""name"": ""Arrow Keys"",
+                    ""id"": ""e66246ab-f450-41fe-9ac3-d77b110cc263"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement - Horizontal"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""79b39ebe-8a75-4462-a48b-6fcdba6e7d9c"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
+                    ""action"": ""Movement - Horizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""357855de-bd8e-45e9-8ea5-c8739ffbf975"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
+                    ""action"": ""Movement - Horizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
                     ""name"": """",
                     ""id"": ""4815a2ee-5ab7-49fd-ae60-80fe849d3f14"",
                     ""path"": ""<Keyboard>/z"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard - Left"",
                     ""action"": ""Low Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -188,11 +232,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""5f702ae7-d16a-45b3-a932-79b40fc5af46"",
+                    ""path"": ""<Keyboard>/n"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
+                    ""action"": ""Low Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""8ccccd54-a3d9-4987-a08b-216814904a4a"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard - Left"",
                     ""action"": ""High Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -210,11 +265,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""7449b707-7b7f-4683-8d57-c2920657e6e9"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
+                    ""action"": ""High Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""5d7b81ee-93ac-475c-99dc-3538a54d6ea1"",
                     ""path"": ""<Keyboard>/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": """",
+                    ""groups"": ""Keyboard - Left"",
                     ""action"": ""Defense"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -226,6 +292,17 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Controller"",
+                    ""action"": ""Defense"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""101fc0f2-428c-4469-9308-9a3c459b319b"",
+                    ""path"": ""<Keyboard>/o"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
                     ""action"": ""Defense"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -247,7 +324,18 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard - Left"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a25c490c-0fd9-4ea4-ac11-d8ff3aeca442"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -269,7 +357,18 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard - Left"",
+                    ""action"": ""Duck"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""407cbbe8-19ed-414f-adc1-55300cdd2940"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard - Right"",
                     ""action"": ""Duck"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -286,12 +385,33 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""devicePath"": ""<XInputController>"",
                     ""isOptional"": true,
                     ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<WebGLGamepad>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<DualShock4GampadiOS>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
                 }
             ]
         },
         {
-            ""name"": ""Keyboard"",
-            ""bindingGroup"": ""Keyboard"",
+            ""name"": ""Keyboard - Left"",
+            ""bindingGroup"": ""Keyboard - Left"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Keyboard>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""Keyboard - Right"",
+            ""bindingGroup"": ""Keyboard - Right"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
@@ -446,13 +566,22 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
             return asset.controlSchemes[m_ControllerSchemeIndex];
         }
     }
-    private int m_KeyboardSchemeIndex = -1;
-    public InputControlScheme KeyboardScheme
+    private int m_KeyboardLeftSchemeIndex = -1;
+    public InputControlScheme KeyboardLeftScheme
     {
         get
         {
-            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
-            return asset.controlSchemes[m_KeyboardSchemeIndex];
+            if (m_KeyboardLeftSchemeIndex == -1) m_KeyboardLeftSchemeIndex = asset.FindControlSchemeIndex("Keyboard - Left");
+            return asset.controlSchemes[m_KeyboardLeftSchemeIndex];
+        }
+    }
+    private int m_KeyboardRightSchemeIndex = -1;
+    public InputControlScheme KeyboardRightScheme
+    {
+        get
+        {
+            if (m_KeyboardRightSchemeIndex == -1) m_KeyboardRightSchemeIndex = asset.FindControlSchemeIndex("Keyboard - Right");
+            return asset.controlSchemes[m_KeyboardRightSchemeIndex];
         }
     }
     public interface IControlsActions

@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     private int health; // Current Health
     [SerializeField]
     private int maxHealth; // Current Max Health
+    [SerializeField]
+    private GameObject DeathParticles;
     public UnityEvent OnDeath; // When Either Player Dies...
     private void Start()
     {
@@ -19,6 +21,7 @@ public class Health : MonoBehaviour
     }
     public void Damage(int value)
     {
+        Debug.Log($"Damage: {value}, {health - value}, {maxHealth}");
         health = Mathf.Clamp(health - value, 0, maxHealth);
         if (health < 0.1f)
             Die();
@@ -27,6 +30,8 @@ public class Health : MonoBehaviour
 
     public void Die()
     {
+        Destroy(Instantiate(DeathParticles, transform.position, transform.rotation), 5f);
         OnDeath.Invoke();
+        Destroy(gameObject);
     }
 }

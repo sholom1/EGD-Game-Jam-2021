@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private PlayerInput input;
     private float horizontalMove;
     private bool isJumping = false;
+    [SerializeField]
     private float cooldown;
     // Start is called before the first frame update
     void Start()
@@ -68,6 +69,13 @@ public class PlayerController : MonoBehaviour
     {
         isJumping = value.isPressed;
     }
+    public void OnDuck()
+    {
+        if (!isJumping)
+        {
+            anim.SetTrigger("Duck");
+        }
+    }
     private void triggerAbility(string name)
     {
         if (cooldown < 0 && abilityLookup.TryGetValue(name, out Ability ability))
@@ -79,6 +87,9 @@ public class PlayerController : MonoBehaviour
         }
     }
     public void OnPowerAttack() => triggerAbility("PowerAttack");
+    public void OnLowAttack() => triggerAbility("LowAttack");
+    public void OnHighAttack() => triggerAbility("HighAttack");
+    public void OnDefenseAttack() => triggerAbility("Defense");
     private bool isGrounded => Physics2D.Raycast(transform.position, Vector2.down, float.MaxValue, GroudMask).distance < 1f;
 
     public float GetBaseDamage() => isAttacking ? activeAbility.getBaseDamage(cooldown) : 0;
